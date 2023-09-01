@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import R01 from './components/R01.js'
+// import R01 from './components/R01.js'
+import A20 from './components/A20.js'
 
 // import PubSub from 'pubsub-js'
 // import Header from './components/ToDoList/Header'
@@ -18,8 +19,12 @@ import R01 from './components/R01.js'
 function App() {
     return (
         <BrowserRouter>
-            <R01 />
+            {/* <R01 /> */}
+            <A20/>
         </BrowserRouter>
+        // <HashRouter>
+        //     <R01 />
+        // </HashRouter>
     );
 }
 
